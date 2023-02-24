@@ -1,38 +1,148 @@
+* {
+  font-family: "Aleo", sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 800px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #d7d7d7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logotype {
+  font-weight: 700;
+  font-size: 39px;
+  color: #003399;
+}
+
+.logotype:hover {
+  cursor: pointer;
+}
+
+.menu {
+  width: 340px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  color: #393939;
+}
+
+/*================================================*/
+
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.main__counter {
+  margin-top: 40px;
+  font-size: 200px;
+  z-index: -1;
+  color: #393939;
+}
+
+.buttons__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 535px;
+  height: auto;
+}
+
+.buttons__menu-item {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Aleo", sans-serif;
+  font-size: 24px;
+  border: none;
+  border-radius: 27px;
+  width: 56px;
+  height: 58px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons__menu-item:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset-img {
+  width: 29px;
+  height: 32px;
+}
+
+.increase {
+  color: #fff;
+  background-color: #0fc50b;
+}
+
+.reset {
+  background-color: #e5e5e5;
+}
+
+.decrease {
+  color: #fff;
+  background-color: #f74c4c;
+}
+
+/*================================================*/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 260px;
+}
+
+.footer__logo {
+  font-family: "Aleo";
+  font-weight: 700;
+  font-size: 24px;
+  color: #9b9da0;
+}
+
+.footer__logo:hover {
+  cursor: pointer;
+}
+
+.footer__menu {
+  display: flex;
+  width: 350px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  font-family: "Aleo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
 }
