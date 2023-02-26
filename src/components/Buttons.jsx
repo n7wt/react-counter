@@ -2,14 +2,14 @@ import reset from "../images/Reset.png";
 
 function Buttons({ counter, setCounter }) {
   function increase() {
-    setCounter(counter + 1);
+    setCounter(counter + 3);
   }
 
   function decrease() {
-    if (counter <= 0) {
+    if (counter - 2 < 0) {
       alert("Число не может быть отрицательным!");
     } else {
-      setCounter(counter - 1);
+      setCounter(counter - 2);
     }
   }
 
