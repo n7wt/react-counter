@@ -1,7 +1,5 @@
-export let number = 0;
-
-function Number() {
-  return <div className="main__counter">{number}</div>;
+function Number({ counter, setCounter }) {
+  return <div className="main__counter">{counter}</div>;
 }
 
 export default Number;
